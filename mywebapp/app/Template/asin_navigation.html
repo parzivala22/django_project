@@ -1,0 +1,17 @@
+<!-- mywebapp/templates/core/asin_navigation.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASIN Navigation</title>
+</head>
+<body>
+    <h1>ASIN Navigation</h1>
+    <form action="{% url 'navigate-asin' %}" method="post">
+        {% csrf_token %}
+        <input type="submit" value="Navigate ASINs">
+    </form>
+</body>
+</html>
